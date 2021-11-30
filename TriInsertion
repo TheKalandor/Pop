@@ -1,4 +1,4 @@
-def triParInsertion(L):
+def triInsertion(L):
         # On initialise Ltriee
         Ltriee = [L.pop(0)]
         while(len(L) > 0):
@@ -12,4 +12,4 @@ def triParInsertion(L):
         return(Ltriee)
 
 
-print(triParInsertion([0, 4, 3, 1, 6, 8, 3, 2, -4]))
+print(triInsertion([0, 4, 3, 1, 6, 8, 3, 2, -4]))
