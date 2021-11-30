@@ -1,11 +1,11 @@
 import time
 
-def triParFusion(L):
+def triFusion(L):
     if(len(L) == 0 or len(L) == 1):
         return(L)
     else:
-        L0 = triParFusion(L[:len(L)//2])
-        L1 = triParFusion(L[len(L)//2:])
+        L0 = triFusion(L[:len(L)//2])
+        L1 = triFusion(L[len(L)//2:])
         Lfinal = []
         while(len(L0) > 0 or len(L1) > 0):
             if(len(L0) == 0):
@@ -20,4 +20,4 @@ def triParFusion(L):
         return(Lfinal)
 
 
-print(triParFusion([0, 4, 3, 1, 6, 8, 3, 2, -4]))
+print(triFusion([0, 4, 3, 1, 6, 8, 3, 2, -4]))
